@@ -36,6 +36,24 @@ void loop() {
     i = -1;
   }
 
+
+// the loop routine runs over and over again forever:
+void loop() {
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(100);               // wait for a second
+  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
+  delay(100); 
+  {digitalWrite(led2, HIGH);
+delay(100);
+digitalWrite(led2, LOW);
+delay(100);}
+{digitalWrite(led3, HIGH);
+delay(100);
+digitalWrite(led3, LOW);
+delay(100);}// wait for a second
+}
+
+
   delay(2000);
   while (potval != newVal) {
     potval = preVal + i;
